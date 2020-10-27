@@ -172833,6 +172833,7 @@ let difficulty = 0;
 let currentWord = '';
 let score = 0;
 let totalTime = 0; 
+let TIME_LIMIT = 30;
 window.onload = function() {
     currentLevel = selectedLevel;
     getDifficultyLevel();
@@ -172875,7 +172876,7 @@ function getWord(start, end)
     }
     return item;
 }
-let TIME_LIMIT = 30;
+
 function getDifficultyLevel(){
     switch(selectedLevel){
         case 'EASY': 
@@ -172884,7 +172885,7 @@ function getDifficultyLevel(){
         case 'MEDIUM': 
             difficulty = 1.5;
             break;
-        case 'DIFFICULTY': 
+        case 'DIFFICULT': 
             difficulty = 2;
             break;
         
@@ -173091,6 +173092,7 @@ function restartGame()
   console.log('restart');
   restart.style.display = "none";
   stop.style.display = "block";
+  document.getElementById('score').innerHTML = "00:00"
   wordInputElement.readOnly = false;
   wordInputElement.value = '';
   createText();
