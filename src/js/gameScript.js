@@ -2,7 +2,7 @@
 let myRequest = new Request('../data/dictionary.json');
 const data = fetch(myRequest)
 .then(response => {
-   return response.json();
+   return response;
 })
 .then(data => console.log(data));
 
