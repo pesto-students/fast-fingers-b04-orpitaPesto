@@ -1,4 +1,4 @@
-const data = require('../data/dictionary.json');
+import * as data from '../data/dictionary.json';
 const player = document.getElementById('name');
 const level = document.getElementById('level');
 const wordLabel = document.getElementById('word');
