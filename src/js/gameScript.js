@@ -1,4 +1,9 @@
-import * as data from '../data/dictionary.json';
+// import * as data from '../data/dictionary.json';
+const data = fetch("../data/dictionary.json")
+.then(response => {
+   return response.json();
+})
+.then(data => console.log(data));
 const player = document.getElementById('name');
 const level = document.getElementById('level');
 const wordLabel = document.getElementById('word');
