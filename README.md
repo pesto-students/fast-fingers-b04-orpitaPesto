@@ -51,6 +51,8 @@ Difficulty factor for hard level: 2
 **Note: Please deploy your application to Netlify(no other platforms allowed at this point) and Add your Application link to website section in About field**
 ![](public/about.png)
 
+Deployed URL: https://trusting-stonebraker-a075a6.netlify.app/
+
 ## Additional Requirement
 
 - Write Test cases for your components.
