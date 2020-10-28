@@ -1,5 +1,4 @@
 // import * as data from '../data/dictionary.json';
-<script type="text/javascript" src="data.json"></script>
 // .then(data => console.log(data));
 var data = JSON.parse(data);
 const player = document.getElementById('name');
