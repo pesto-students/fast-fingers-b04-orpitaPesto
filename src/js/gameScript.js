@@ -1,6 +1,11 @@
 // import * as data from '../data/dictionary.json';
-// .then(data => console.log(data));
-var data = JSON.parse(data);
+let myRequest = new Request('../data/dictionary.json');
+const data = fetch(myRequest)
+.then(response => {
+   return response.json();
+})
+.then(data => console.log(data));
+
 const player = document.getElementById('name');
 const level = document.getElementById('level');
 const wordLabel = document.getElementById('word');
