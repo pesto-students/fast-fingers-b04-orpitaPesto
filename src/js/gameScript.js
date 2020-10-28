@@ -172841,7 +172841,7 @@ document.onreadystatechange = function() {
         document.querySelector("#loader").style.visibility = "visible"; 
     } else { 
         document.querySelector("#loader").style.display = "none"; 
-        document.getElementById('container-loaded').style.diaplay = "block"; 
+        document.getElementById('container-loaded').style.display = "block"; 
     } 
 }; 
 window.onload = function() {
