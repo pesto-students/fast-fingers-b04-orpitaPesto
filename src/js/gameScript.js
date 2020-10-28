@@ -172837,11 +172837,11 @@ let TIME_LIMIT = 30;
 
 document.onreadystatechange = function() { 
     if (document.readyState !== "complete") { 
-        document.getElementById('container-loaded').style.visibility = "hidden"; 
+        document.getElementById('container-loaded').style.display = "none"; 
         document.querySelector("#loader").style.visibility = "visible"; 
     } else { 
         document.querySelector("#loader").style.display = "none"; 
-        document.getElementById('container-loaded').style.visibility = "visible"; 
+        document.getElementById('container-loaded').style.diaplay = "block"; 
     } 
 }; 
 window.onload = function() {
