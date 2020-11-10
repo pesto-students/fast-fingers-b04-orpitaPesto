@@ -10,9 +10,9 @@ ReactDOM.render(
   <React.StrictMode>
    <BrowserRouter>
       <Switch>
-        <Route path="/" component={FastFingersApp} exact />
-        <Route path="/game" component={GamePage} />
-        <Route path="/gameOver" component={GameOver} />
+        <Route path="/" component={FastFingersApp} exact={true} />
+        <Route path="/game" component={GamePage} exact={true}/>
+        <Route path="/gameOver" component={GameOver} exact={true}/>
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,
