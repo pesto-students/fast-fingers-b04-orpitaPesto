@@ -1,0 +1,71 @@
+.bg-container {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.9) 20%,
+    rgba(1, 31, 18, 0.8) 80%
+  );
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-image: url("./images/Group243.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 10%;
+}
+
+.keyboard {
+  margin: auto;
+  text-align: center;
+  margin-top: 5%;
+  color: red;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.keyboard img {
+  width: 150px;
+}
+.header {
+  text-align: center;
+  color: #ff5155;
+}
+
+.tagLine {
+  text-align: center;
+  color: #ff5155;
+}
+
+.form-input {
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+  margin-left: 27%;
+}
+
+.inputName {
+  margin-top: 5%;
+}
+
+.invalid {
+  border: 1px solid #ff0000;
+}
+
+.transparentButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}

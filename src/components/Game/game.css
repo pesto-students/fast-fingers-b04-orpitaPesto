@@ -1,0 +1,236 @@
+.bg-container {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.9) 20%,
+    rgba(1, 31, 18, 0.8) 80%
+  );
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-image: url("../../images/Group243.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 10%;
+}
+
+.user {
+  width: 2rem;
+  margin-left: -3rem;
+}
+
+.userName {
+  margin-left: 1rem;
+  color: #ff5155;
+  font-weight: bold;
+  font-size: larger;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.fastFingers {
+  float: right;
+  color: #ff5155;
+  font-weight: bold;
+  font-size: larger;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.base-timer {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 7px;
+  stroke: grey;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 7px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: rgb(65, 184, 131);
+}
+
+.base-timer__path-remaining.orange {
+  color: orange;
+}
+
+.base-timer__path-remaining.red {
+  color: red;
+}
+
+.base-timer__label {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+.divWord {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin-top: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  /* margin-left: -4rem; */
+  margin-left: -15rem;
+}
+.labelWord {
+  font-size: 2rem;
+  text-align: center;
+}
+.scoreBoard {
+  border: 1px solid rgb(240, 15, 15) !important;
+  border-radius: 16px;
+  text-align: center;
+  color: red;
+  width: 80%;
+  height: 90%;
+  overflow-y: auto;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .user {
+    margin-left: 0rem;
+  }
+  .centered {
+    margin-left: 5rem;
+  }
+  .divWord {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-top: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    margin-left: 0rem;
+  }
+  .labelWord {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .inputText {
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .divWord {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-top: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    margin-left: 0rem;
+  }
+  .labelWord {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+.none {
+  display: none;
+}
+.centre {
+  text-align: center;
+  color: #ff5155;
+  font-weight: bold;
+  font-size: larger;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.btn-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.btn {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  height: 80px;
+  font-family: Sans-Serif;
+}
+
+.btn1 {
+  background-color: white;
+  width: 8rem;
+  border: 3px solid #4caf50;
+  color: #4caf50;
+  text-transform: uppercase;
+  height: inherit;
+  width: inherit;
+  transition: background-color 0.5s ease, color 1s ease;
+  cursor: pointer;
+  box-shadow: 10px 10px rgba(77, 77, 77, 0.5);
+}
+
+.btn1:hover {
+  background-color: #4caf50;
+  color: white;
+}
+.btn1:active {
+  border: 10px dotted;
+}
+
+.btn2 {
+  width: 8rem;
+  background-color: white;
+  border: 3px solid #ff5155;
+  color: #ff5155;
+  text-transform: uppercase;
+  height: inherit;
+  width: inherit;
+  transition: background-color 0.5s ease, color 1s ease;
+  cursor: pointer;
+  box-shadow: 10px 10px rgba(77, 77, 77, 0.5);
+}
+
+.btn2:hover {
+  background-color: #ff5155;
+  color: white;
+}
+.btn2:active {
+  border: 10px dotted;
+}
+.right {
+  float: right;
+}
