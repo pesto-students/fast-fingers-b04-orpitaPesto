@@ -4,7 +4,6 @@ import Container from 'react-bootstrap/Container';
 import { Row, Col} from 'react-bootstrap';
 import userIcon from '../../images/Icon material-person.png';
 import gameIcon from '../../images/Icon awesome-gamepad.svg';
-import Form from 'react-bootstrap/Form';
 import data from '../../data/dictionary.json'
 
 class GamePage extends React.Component {
@@ -39,7 +38,6 @@ constructor(props) {
         classEnd: "none",
         showDetailedScore: []
       };
-    let timerInterval = null;
     if(!localStorage.getItem('currentUser') ){
       this.props.history.push("/");
 
