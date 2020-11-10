@@ -42,11 +42,11 @@ constructor(props) {
       this.props.history.push("/");
 
     }
-    // if(localStorage.getItem('reload') === 'reload')
-    // {
-    //     window.location.reload();
-    //     localStorage.removeItem("reload");
-    // }
+    if(localStorage.getItem('reload') === 'reload')
+    {
+        window.location.reload();
+        localStorage.removeItem("reload");
+    }
     
     this.onInput = this.onInput.bind(this);
     this.formatTimeLeft = this.formatTimeLeft.bind(this);

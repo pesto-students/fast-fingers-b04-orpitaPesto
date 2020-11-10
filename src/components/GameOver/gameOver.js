@@ -59,8 +59,7 @@ constructor(props) {
 
     restart(){
         localStorage.setItem('reload', 'reload')
-
-        this.props.history.push("/game");
+        this.props.history.push("/");
         
     }
     
