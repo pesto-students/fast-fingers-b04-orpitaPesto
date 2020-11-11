@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastFingers</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    
+</head>
+<body>
+    <div id="loader" class="loader-center"></div> 
+    <div class="bg-container" id= "container-loaded">
+        <div class="login-container">
+            <div class="inGameProfile">
+                <img src="./src/images/Icon material-person.png" alt=""><div class="player_name" id="name"></div>
+                <div class="fast-fingers">fast fingers</div>
+            </div>
+            <div class="inGameProfile">
+                <img src="./src/images/Icon awesome-gamepad.svg" alt=""><div class="player_name" id="level"></div>
+                <div class="fast-fingers">SCORE : <span id="score">00 : 00  </span></div>
+            </div>
+            <div class="container">
+                <div class="left">
+                    <div class="score-board">
+                        <span class="score-board-text">SCORE BOARD</span>
+                        <div class="score-details" id="scoreDetails">
+                            <span class="christmas">No score yet !!!</span>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="parentLogout" id="logout">
+                        <span  class="close"></span>
+                        <span class="logout">Logout</span>
+                    </div>
+                </div>
+                <div class="center container" >
+                    <span id="app"></span>
+                    <br>
+                    <div class="word">
+                        <label class="wordGame" id="word"></label><br/>
+
+                        <input type="text" class="inputWord" id='input-word' autofocus>
+                    </div>
+                </div>
+                <div class="right">
+                    <div>
+                        <p style="font-size:100px">&#128540;</p>
+                        <!-- <p style="font-size:100px">&#128546;</p> -->
+                    </div>
+                    <div class="gameMessage" id='stop' onclick='stopGame()'>
+                        <h2>
+                            <span class="title">STOP</span>
+                        </h2>
+                    </div>
+                    <div class="gameMessage" id='restart' onclick='restartGame()'>
+                        <h2>
+                            <span class="title">Restart</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="src/js/gameScript.js"></script>
+</body>
+</html>
+
