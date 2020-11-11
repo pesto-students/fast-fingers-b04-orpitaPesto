@@ -6,6 +6,12 @@ const gameStart = document.getElementById('divGame');
 const error = document.getElementById('error');
 const errMessageSpan = document.getElementById('noName');
 const errorMessage = "Can't enter without your name!";
+fetch('../data/dictionary.json')
+  .then(response => response.json())
+  .then(data => {
+  	// Do something with your data
+  	console.log(data);
+  });
 window.onload = function() {
     sessionStorage.removeItem("scores");
     if(sessionStorage.getItem('CurrentUser') && sessionStorage.getItem('Level'))
